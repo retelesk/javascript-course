@@ -111,7 +111,7 @@ const markHigherBMI =
 console.log(massMark / heightMark ** 2);
 console.log(massJohn / (heightJohn * heightJohn));
 console.log(markHigherBMI);
-*/
+
 const firstName = "Jonas";
 const job = 'teacher';
 const birthYear = 1991;
@@ -131,3 +131,4 @@ lines');
 console.log(`String
 multiple
 lines new`);
+*/
