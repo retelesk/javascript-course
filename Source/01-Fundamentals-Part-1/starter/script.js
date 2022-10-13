@@ -24,3 +24,5 @@ let myCurrentJob = "Teacher";
 
 console.log(myFirstJob);
 */
+true;
+console.log(true);
