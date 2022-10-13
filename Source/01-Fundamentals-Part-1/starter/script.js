@@ -1,3 +1,4 @@
+/*
 let js = "amazing";
 
 console.log(40 + 8 + 23 - 10);
@@ -16,8 +17,10 @@ console.log(firstName);
 
 let person = "Jonas";
 let PI = 3.1415;
+// Variable name conventions
 
-let myFirstJob = "Coder";
+let myFirstJob = "Programmer";
 let myCurrentJob = "Teacher";
 
 console.log(myFirstJob);
+*/
