@@ -132,3 +132,4 @@ console.log(`String
 multiple
 lines new`);
 */
+console.log();
