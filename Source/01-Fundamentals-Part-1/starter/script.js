@@ -118,6 +118,7 @@ const birthYear = 1991;
 const year = 2037;
 
 const jonas = "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
+
 console.log(jonas);
 
 const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
@@ -132,4 +133,10 @@ console.log(`String
 multiple
 lines new`);
 */
-console.log();
+const age = 15;
+
+if (age >= 18) {
+    console.log(`Sarah can start driving license`);
+} else {
+    console.log(`Sarah can't start driving license`);
+}
