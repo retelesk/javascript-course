@@ -168,17 +168,135 @@ if (BMIMark > BMIJohn) {
 } else {
   console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})`);
 }
-*/
+
 // Type conversion
 
-const inputYear = '1991';
+const inputYear = "1991";
 console.log(Number(inputYear), inputYear);
 console.log(inputYear + 18, Number(inputYear) + 18);
 
 console.log(Number("Jonas"));
 console.log(typeof NaN);
 
-console.log(String(23),23);
+console.log(String(23), 23);
 
 // Type coercion
-console.log('I am '+23+' years old');
+console.log("I am " + 23 + " years old");
+console.log("I am " + String(23) + " years old");
+console.log("23" + "10" + 3);
+console.log("23" * "2");
+console.log("23" / "2");
+
+let n = "1" + 1; // 11
+n = n - 1;
+console.log(n);
+
+
+// 5 falsy values: 0, '', undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+console.log(Boolean({}));
+console.log(Boolean("Jonas"));
+
+const money = 10;
+if (money) {
+  console.log(`Don't spend it all!`);
+} else {
+  console.log(`You should get a job!`);
+}
+
+let height = 0;
+if (height) {
+  console.log(`Height is defined`);
+} else {
+  console.log(`Height is undefined`);
+}
+
+const age = 18;
+if (age === 18) {
+  console.log(`You just became an adult`);
+}
+
+const ageNew = 18;
+if (ageNew === 18) {
+  console.log(`Strict`);
+} else {
+  console.log(`Loose`);
+}
+
+const favourite = Number(prompt(`What's your favourite number?`));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {
+  23;
+  console.log(`Cool! 23 is an amazing number!`);
+} else if (favourite === 7) {
+  console.log(`7 is also a cool number!`);
+} else {
+  console.log(`Number is not 23 or 7`);
+}
+
+const favourite = Number(prompt(`What's your favourite number?`));
+console.log(favourite);
+console.log(typeof favourite);
+if (favourite !== 23) {
+  console.log(`Why not 23?`);
+}
+
+const hasDriversLicense = true; //A
+const hasGoodVision = true; //B
+
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasGoodVision);
+// console.log(!hasDriversLicense || hasGoodVision);
+// console.log(!hasDriversLicense);
+
+if (hasDriversLicense && hasGoodVision) {
+  console.log(`Sarah is able to drive!`);
+} else {
+  console.log(`Someone else should drive`);
+}
+
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log(`Sarah is able to drive!`);
+} else {
+  console.log(`Someone else should drive`);
+}
+
+const scoreDolphins1 = 97;
+const scoreDolphins2 = 112;
+const scoreDolphins3 = 101;
+const scoreKoalas1 = 109;
+const scoreKoalas2 = 95;
+const scoreKoalas3 = 106;
+
+const averageScoreDolphins =
+  (scoreDolphins1 + scoreDolphins2 + scoreDolphins3) / 3;
+const averageScoreKoalas = (scoreKoalas1 + scoreKoalas2 + scoreKoalas3) / 3;
+
+if (averageScoreDolphins > averageScoreKoalas && averageScoreDolphins > 100) {
+  console.log(`Dolphins won with ${averageScoreDolphins}`);
+} else if (
+  averageScoreKoalas > averageScoreDolphins &&
+  averageScoreKoalas > 100
+) {
+  console.log(`Koalas won with ${averageScoreKoalas}`);
+} else if (
+  averageScoreDolphins === averageScoreKoalas &&
+  averageScoreDolphins > 100 &&
+  averageScoreKoalas > 100
+) {
+  console.log(`Draw with ${averageScoreDolphins}`);
+} else {
+  console.log(`No teams won`);
+}
+*/
+const scoreDolphins = (96 + 112 + 101) / 3;
+const scoreKoalas = (109 + 95 + 106) / 3;
