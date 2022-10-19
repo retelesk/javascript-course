@@ -351,5 +351,41 @@ for (let i = 0; i < jonasArray.length; i++) {
   jonasType.push(typeof jonasArray[i]);
 }
 console.log(jonasType);
-*/
+
 const years = [1991, 2007, 1969, 2020];
+const ages = [];
+for (let i = 0; i < years.length; i++) {
+  // ages[i] = 2037 - years[i];
+  ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+// Continue and Break in loop
+const jonasArray = [
+  "jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+  true,
+];
+const jonasType = [];
+for (let i = 0; i < jonasArray.length; i++) {
+  console.log(jonasArray[i], typeof jonasArray[i]);
+}
+console.log(`--- ONLY STRING ---`);
+for (let i = 0; i < jonasArray.length; i++) {
+  if (typeof jonasArray[i] !== "string") {
+    continue;
+  }
+  console.log(jonasArray[i], typeof jonasArray[i]);
+}
+
+console.log(`--- BEARK WITH NUMBER ---`);
+for (let i = 0; i < jonasArray.length; i++) {
+  if (typeof jonasArray[i] === "number") {
+    break;
+  }
+  console.log(jonasArray[i], typeof jonasArray[i]);
+}
+*/
