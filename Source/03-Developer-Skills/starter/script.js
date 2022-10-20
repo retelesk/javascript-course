@@ -2,3 +2,6 @@
 'use strict';
 
 const calcAge = birthYear => 2037 - birthYear;
+console.log(calcAge(1998));
+
+// 10/10 -
