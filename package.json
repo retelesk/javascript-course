@@ -4,5 +4,8 @@
   },
   "devDependencies": {
     "prettier": "2.7.1"
+  },
+  "scripts": {
+    "devserver": "live-server"
   }
 }
